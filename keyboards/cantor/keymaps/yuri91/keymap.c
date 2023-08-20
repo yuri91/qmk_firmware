@@ -105,13 +105,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *               │L1 │|_|│           │ ↲ │L2 │
       *               └───┤SFT├───┐   ┌───┤CTL├───┘
       *                   └───┤TAB│   │ ⌫ ├───┘
+      *                       │GUI│   │   │
       *                       └───┘   └───┘
       */
     [Default] = LAYOUT_split_3x6_3(
         KC_NO, KC_Q, KC_W, KC_E, KC_R,         KC_T,                        KC_Y,         KC_U,         KC_I,    KC_O,   KC_P,    KC_NO,
         KC_NO, KC_A, KC_S, KC_D, KC_F,         KC_G,                        KC_H,         KC_J,         KC_K,    KC_L,   KC_SCLN, KC_NO,
         KC_NO, KC_Z, KC_X, KC_C, LALT_T(KC_V), LCTL_T(KC_B),                RSFT_T(KC_N), RALT_T(KC_M), KC_COMM, KC_DOT, KC_SLSH, KC_NO,
-                            LT(1,KC_ESC), LSFT_T(KC_SPC), KC_TAB,      KC_BSPC, RCTL_T(KC_ENT), LT(2,KC_DEL)
+                    LT(1,KC_ESC), LSFT_T(KC_SPC), LGUI_T(KC_TAB),      KC_BSPC, RCTL_T(KC_ENT), LT(2,KC_DEL)
     ),
      /*
       * ┌───┬───┬───┬───┬───┬───┐       ┌───┬───┬───┬───┬───┬───┐
